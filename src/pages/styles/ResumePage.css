@@ -1,0 +1,93 @@
+.resumepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: whitesmoke;
+    height: 100vh;
+}
+
+.generalinfo__resume{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.genralinfo__info{
+    display: flex;
+
+}
+.info__title{
+    text-align: right;
+    width: 90px;
+    padding-right: 0.5em ;
+}
+.generalinfo__title{
+    padding-bottom: 0.5em;
+    font-size: 1.8rem;
+}
+
+.generalinfo__content{
+    padding-left: 0.5em;
+}
+
+.softskills__general{
+    width: 80%;
+}
+
+.soft__title{
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.softskills__content{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    justify-content: space-between;
+    
+
+}
+.img__downloadcv{
+    width: 100px;
+    aspect-ratio: 1;
+    animation: 1.5s ease 0s infinite beat;
+    cursor: pointer;
+
+}
+.softskills_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+.softskills__title{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+
+}
+
+.softskills__img{
+   width: 70px;
+   height: 70px;
+}
+
+.softskills__description{
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
+    align-self:start;    
+    font-size: 0.8rem;
+    height: 100%;
+    text-align: justify;
+
+}
+
+
+
+
+@keyframes beat {
+    0%, 50%, 100% { transform: scale(1, 1); }
+    20%, 85% { transform: scale(0.92, 0.95); }
+  }

@@ -1,0 +1,91 @@
+.homepage{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:whitesmoke;
+    width: 100%;
+}
+.homepage__presentation{
+    
+    width: 50%;
+}
+
+.homepage__content{
+    padding: 0.5em;
+}
+
+.homepage__title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+.homepage__description{
+    line-height: 1.6em ;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 0.5em;
+    color: dimgray;
+}
+
+.homepage__iconbar{
+    font-size: 1.8rem;
+}
+
+.icon__social{
+    transition: transform 350ms ease;
+}
+
+.icon__social:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+
+@media (min-width:280px) and (max-width:480px) {
+
+    .homepage{
+        position: absolute;
+        top:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 93vh;
+        margin: 0;
+        
+    }
+
+    .homepage__title{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.2em;
+        padding-top:11vh ;
+        text-align: center;
+
+    }
+    
+    .homepage__description{
+        font-size: 1rem;
+        padding: 0 1em ;
+    }
+
+    .homepage__presentation{    
+        width: 100% ;
+    }
+
+    .homepage__content{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    .homepage__iconbar{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0.6em;
+        padding-right: 0.8em;
+    }
+}

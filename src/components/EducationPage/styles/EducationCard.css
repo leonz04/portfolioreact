@@ -1,0 +1,59 @@
+
+.educationcard{
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.422);
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center  ;
+    background-color: ivory;
+    animation: pin 1s alternate;
+
+
+}
+
+.educationcard__title{
+    color: dimgray;
+    font-size: 1.6rem;
+    margin-bottom: 0.2em;
+
+}
+
+.certidicated{
+    font-size: 0.7rem;
+    font-style: oblique;
+    
+}
+
+.topic__item{
+    width: 80%;
+
+     display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin-bottom: 0.3rem;
+}
+
+.topic__label{
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+}
+
+.img__institute{
+    
+    width: 100px;
+    justify-self: end;
+}
+
+@keyframes incard {
+    from{
+        transform: translateY(-1000);
+        
+    }to{
+        transform: translateY(0);
+    }
+    
+}

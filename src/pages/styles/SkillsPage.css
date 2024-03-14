@@ -1,0 +1,131 @@
+.skillspage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:whitesmoke;
+    height: 100vh;
+    width: 100%;
+}
+
+.ts{
+    --url-bg: url("/logos/ts.png")
+}
+
+.javascript{
+    --url-bg: url("/logos/js.png")
+}
+.react{
+    --url-bg: url("/logos/react.svg")
+}
+.html{
+    --url-bg: url("/logos/html.svg")
+}
+.css{
+    --url-bg: url("/logos/css.svg")
+}
+.illustrator{
+    --url-bg: url("/logos/illustrator.svg")
+}
+.figma{
+    --url-bg: url("/logos/Figma-logo.svg")
+}
+
+.node{
+    --url-bg: url("/logos/node.png")
+}
+.photoshop{
+    --url-bg: url("/logos/photoshop.svg")
+}
+.python{
+    --url-bg: url("/logos/python.png")
+}
+.vite{
+    --url-bg: url("/logos/vite.png")
+}
+.postgres{
+    --url-bg: url("/logos/postgres.png")
+}
+.php{
+    background-size: 40% !important;
+
+    --url-bg: url("/logos/php-1.svg")
+}
+.jquery{
+    --url-bg: url("/logos/JQuery.png")
+}
+.materialize{
+    background-size: 40% !important;
+    --url-bg: url("/logos/materialize.svg")
+}
+
+.sequelize{
+    --url-bg: url("/logos/sequelize.png")
+}
+
+.tailwind{
+    --url-bg: url("/logos/tailwind.svg")
+}
+.postman{
+    --url-bg: url("/logos/postman.svg")
+}
+
+.skillspage__title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+    padding-top: 10vh;
+    
+    
+}
+
+.skillcard__title{
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    color: #424141;
+
+}
+
+
+.skill__Card{
+    display: flex;
+    align-items: center;
+    min-width: 350px;
+    max-width: 350px;
+    height: 60px;
+    border-radius: 0.5em;
+    border: 0.5px solidlinear-gradient(90deg, rgba(255, 255, 255, 0.776) 50%, rgba(0,0,0,0) 90%);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.325);
+    /* background-image: url("/logos/ts.png"),linear-gradient(); */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.776) , rgba(0,0,0,0) 120%), no-repeat 110% 45%/50%  var(--url-bg);
+    background-size:25%;
+    background-repeat: no-repeat;
+    background-position:top right;
+    transform: rotateZ('angle');
+    padding: 1em;
+    cursor: pointer;
+    background-color: white;
+    
+
+}
+.content__technologies{
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media (min-width:300px) and (max-width:480px){
+    .skillspage{
+        
+        width: 100%;
+
+}
+.skillspage__title{    
+    font-size: 2rem;
+    padding-top:10vh;
+    
+}
+
+
+}

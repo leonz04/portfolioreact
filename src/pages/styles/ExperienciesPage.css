@@ -1,0 +1,52 @@
+.experiencespage{
+    background:whitesmoke;
+
+}
+
+.experiencespage__title{
+    padding-top: 10vh;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+    text-align: center;
+}
+
+.vertical-timeline-element-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 4px rgba(105, 105, 105, 0.64),
+      0 2px 0 rgba(0, 0, 0, 0.772),
+      0 3px 0 4px rgba(0,0,0,.05) !important;
+}
+
+.vertical-timeline-element-date{
+    color: black !important;
+}
+.icon__experience{
+    font-size: 2rem;
+}
+
+.logo__company__container{
+    position: absolute;
+    align-self: flex-end;
+    bottom: 0;   
+}
+
+.logo__company{
+    height: 85px;   
+    
+}
+
+.logo__companyR{
+width: 250px;    
+}
+
+.job__company{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+
+}

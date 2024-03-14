@@ -1,0 +1,38 @@
+
+.educationpage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    background:whitesmoke;
+    width: 100%;
+    height: 100vh;
+}
+
+
+@keyframes educationLeft{
+    from{
+        transform:translateX(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0);
+        opacity: 1;
+    }
+    
+
+}
+@keyframes educationRigth{
+    from{
+        transform:translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0);
+        opacity: 1;
+    }
+    
+
+}
