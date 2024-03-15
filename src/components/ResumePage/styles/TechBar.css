@@ -1,0 +1,22 @@
+.techbar{
+    display: flex;
+}
+
+.techbar__content{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5em;
+    padding-bottom: 1em;
+}
+
+.techbar__img{
+    margin: 0.5em;
+    height: 50px;
+}
+
+.techbar__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
