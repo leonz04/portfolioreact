@@ -8,26 +8,43 @@
 
 .generalinfo__resume{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2em;
     width: 80%;
 }
 
+.generalinfo__aboutme{
+    text-align: justify;
+}
+
 .genralinfo__info{
-    display: flex;
+    display:grid;
+    
+    grid-template-columns: repeat(2,1fr);
+
+    
 
 }
 .info__title{
     text-align: right;
-    width: 90px;
     padding-right: 0.5em ;
 }
+
+.info__value{
+    text-align: left;
+}
+
 .generalinfo__title{
     padding-bottom: 0.5em;
     font-size: 1.8rem;
 }
 
 .generalinfo__content{
-    padding-left: 0.5em;
+    display: grid;
+
+    font-size: 1.5rem;
+padding-bottom: 1em;
 }
 
 .softskills__general{
@@ -48,8 +65,13 @@
     
 
 }
+.content__downloadcv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .img__downloadcv{
-    width: 100px;
+    width: 60px;
     aspect-ratio: 1;
     animation: 1.5s ease 0s infinite beat;
     cursor: pointer;
@@ -76,7 +98,7 @@
 .softskills__description{
     
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     align-self:start;    
     font-size: 0.8rem;
     height: 100%;

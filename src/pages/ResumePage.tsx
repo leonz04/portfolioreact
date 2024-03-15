@@ -13,13 +13,16 @@ const ResumePage = () => {
       <section className='generalinfo__resume' >
       <article className='generalinfo__content' >
         
-        <p className='genralinfo__info' ><b className='info__title' >Nombre:</b> <span>Andres Felipe Leon Zapata</span></p>
-        <p className='genralinfo__info' ><b className='info__title' >Edad:</b><span>35</span></p>
-        <p className='genralinfo__info' ><b className='info__title' >correo:</b> <span>afleonz04@gmail.com</span></p>
-        <p className='genralinfo__info' ><b className='info__title' >Telefono:</b> <span>+57 319 320 47 84</span></p>
+        <p className='genralinfo__info' ><b className='info__title' >Nombre:</b> <span className='info__value' >Andres Felipe Leon Zapata</span></p>
+        <p className='genralinfo__info' ><b className='info__title' >Edad:</b><span className='info__value' >35</span></p>
+        <p className='genralinfo__info' ><b className='info__title' >correo:</b> <span className='info__value' >afleonz04@gmail.com</span></p>
+        <p className='genralinfo__info' ><b className='info__title' >Telefono:</b> <span className='info__value' >+57 319 320 47 84</span></p>
         
       </article>
+      <p className='generalinfo__aboutme'>Apasionado desarrollador web comprometido con la excelencia en la creación de soluciones digitales innovadoras. Mi habilidad para adaptarme a diferentes entornos de trabajo y trabajar en equipo me permite alcanzar objetivos de manera efectiva. Siempre en busca de nuevos desafíos tecnológicos y en constante aprendizaje de las mejores prácticas en la industria. Con un enfoque proactivo y habilidades técnicas sólidas, estoy listo para hacer una contribución significativa a proyectos y aplicaciones web.</p>
+      <div className='content__downloadcv'>
       <img className='img__downloadcv' src='/downloadCV.svg' alt=''/>
+      </div>
       </section>
 
       <article className='softskills__general'>

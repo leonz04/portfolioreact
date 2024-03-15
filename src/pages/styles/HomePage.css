@@ -7,6 +7,11 @@
     background:whitesmoke;
     width: 100%;
 }
+
+.cv{
+    animation: 1.5s ease 0s infinite beat1;
+    cursor: pointer;
+}
 .homepage__presentation{
     
     width: 50%;
@@ -20,6 +25,11 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 0.2em;
+}
+.homepage__dev{
+    font-size:2rem;
+    font-weight: 500;
+
 }
 
 .homepage__description{
@@ -43,6 +53,18 @@
     color: blue;
     transform: scale(1.2);
 }
+@keyframes beat1 {
+    0%, 50%, 100% { 
+        transform: scale(1.2    , 1.2); 
+        color: blue;
+
+    }
+    20%, 85% {
+        transform: scale(0.92, 0.95);
+        color: black;
+     }
+  }
+
 
 @media (min-width:280px) and (max-width:480px) {
 
