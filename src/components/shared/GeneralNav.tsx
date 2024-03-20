@@ -1,14 +1,36 @@
 import { Link } from "react-router-dom"
 import './styles/GeneralNav.css'
 import { useState } from "react"
+import { useAppSelector, useAppDispatch } from '../../store/hooks'
+import { setModeViewG } from '../../store/states/modeView.state';
+import { setModeLanguageG } from '../../store/states/modeLanguage';
+
 
 const GeneralNav = () => {
+
+const modeView=useAppSelector((state)=>state.modeView);
+const modeLanguage=useAppSelector((state)=>state.modeLanguage);
+
+console.log(`hola esto es nu prueba modo ${modeView}`)
+console.log(`hola esto es nu prueba language ${modeLanguage}`)
+const dispatch =useAppDispatch();
 
   const [openMenu, setOpenMenu] = useState(false)
 
   const handleMenu=()=>{
     setOpenMenu(!openMenu)
   }
+
+  const handleMode=()=>{
+    dispatch(setModeViewG(!modeView));
+  }
+
+  const handleLanguage=()=>{
+    dispatch(setModeLanguageG(!modeLanguage))
+  }
+
+
+
   return (
     <nav className="nav">
         <Link className="nav__logo" to={'/'}><img className="img__logo" src="/leonz.png" alt='logo_leonz'/></Link>
@@ -27,12 +49,12 @@ const GeneralNav = () => {
 
         <div className="nav__filter-lang">
         <h3 className="nav__title-lang">Languages</h3>
-        <select className="nav__select-lang">
+        <select className="nav__select-lang" onChange={handleLanguage}>
             <option>Spanish</option>
             <option>English</option>
         </select>
         </div>
-        <i className='nav__mode-icon bx bxs-sun'></i>
+        <i className={`nav__mode-icon bx ${modeView?'bxs-sun':'bxs-moon'}`}  onClick={handleMode}></i>
         {/* <i className='bx bxs-moon'></i> */}
 
         </section>

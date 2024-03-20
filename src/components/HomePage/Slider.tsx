@@ -16,7 +16,6 @@ const Slider = () => {
     useEffect(() => {
         const timer = setInterval(() => {
             if(slideMove){
-                console.log(imgSelected)
                 if(imgSelected>=13){
                     setSlideMove(!slideMove)
                     setImgSelected(imgSelected-1);
@@ -26,7 +25,6 @@ const Slider = () => {
 
                 }
             }else{
-                console.log(imgSelected)
                 setImgSelected(imgSelected-1);
                 if(imgSelected==1){
                     setSlideMove(!slideMove)            
@@ -47,7 +45,6 @@ const Slider = () => {
 
     const handlePrev=()=>{
         if(imgSelected-1>=0){
-            console.log(imgSelected)    
             setImgSelected(imgSelected-1)
         }    
     }
@@ -55,8 +52,7 @@ const Slider = () => {
     const handleNext=()=>{
     
         if(imgSelected+1<=13){
-            console.log('first')
-            console.log(imgSelected)
+        
             setImgSelected(cv=>cv+1)
         }    
     }
