@@ -1,10 +1,10 @@
-import { createSlice, PayloadAction  } from "@reduxjs/toolkit";
+import { createSlice  } from "@reduxjs/toolkit";
 
 const modeViewSlice =createSlice({
     name: 'modeView',
     initialState: true,
     reducers:{
-        setModeViewG:(state, action: PayloadAction<boolean>)=> action.payload
+        setModeViewG:(state)=> !state
 
     }
 })

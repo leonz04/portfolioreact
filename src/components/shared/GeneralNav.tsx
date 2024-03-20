@@ -22,11 +22,11 @@ const dispatch =useAppDispatch();
   }
 
   const handleMode=()=>{
-    dispatch(setModeViewG(!modeView));
+    dispatch(setModeViewG());
   }
 
   const handleLanguage=()=>{
-    dispatch(setModeLanguageG(!modeLanguage))
+    dispatch(setModeLanguageG())
   }
 
 
