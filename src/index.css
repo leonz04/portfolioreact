@@ -9,8 +9,14 @@
 }
 
 .dark{
-    background-color: darkblue;
-    color: white;
+    --bg: darkblue;
+    --text: white;
+
+}
+
+.ligth{
+    --bg: whitesmoke;
+    --text: darkblue;
 
 }
 
@@ -46,8 +52,16 @@ button, a{
     text-decoration: none;
     color: black;
     border: none;
-    background-color: white;
+    background-color: var(--bg);
+}
+button{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: none;
+    background-color: gainsboro;
 }
 label{
     display: block;
 }
+

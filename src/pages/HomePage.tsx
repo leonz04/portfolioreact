@@ -21,7 +21,7 @@ const modeLanguage=useAppSelector((state)=>state.modeLanguage)
 
 
   return (
-    <div className={`homepage ${modeView?'':'dark'}`}>
+    <div className={`homepage ${modeView?'ligth':'dark'}`}>
 
       <section className='homepage__presentation'>
       <h1 className='homepage__title'>Andres Felipe Leon Zapata</h1>
@@ -48,7 +48,7 @@ const modeLanguage=useAppSelector((state)=>state.modeLanguage)
       <a href='https://www.linkedin.com/in/andres-felipe-leon-zapata-0a8637bb' target="_blank"><i className='icon__social bx bxl-linkedin-square' ></i></a>
       <a href="mailto:afleonz04@gmail.com"><i className='icon__social bx bx-at'></i></a>
       <a href="tel:+573193204784"><i className='icon__social bx bxs-phone' ></i></a>
-      <i className='icon__social cv bx bxs-download'></i>
+      <a href={`${modeLanguage?'/cv/LeonCv.pdf':'/cv/LionCv.pdf'}`} download={`${modeLanguage?'LeonCv.pdf':'LionCv.pdf'}`}><i className='icon__social cv bx bxs-download'></i></a>
       
       </div>
       
