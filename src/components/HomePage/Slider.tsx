@@ -65,21 +65,21 @@ const Slider = () => {
             <div style={objStyle} className='slider__interior'>
                             <div className='slider__img-container'>
                                 <img className='slider__img'src="/logos/js.png"/>
-                                <h4 className='tech__name'>JavaScript</h4>
+                                <h2 className='tech__name'>JavaScript</h2>
                             </div>
                             <div className='slider__img-container'>
                                 <img className='slider__img' src="/logos/react.svg"/>
-                                <h4 className='tech__name'>React</h4>
+                                <h2 className='tech__name'>React</h2>
 
                             </div>
                             <div className='slider__img-container'>
                                 <img className='slider__img' src="/logos/html.svg"/>
-                                <h4 className='tech__name'>HTML</h4>
+                                <h2 className='tech__name'>HTML</h2>
 
                             </div>
                             <div className='slider__img-container'>
                                 <img className='slider__img' src="/logos/css.svg"/>
-                                <h4 className='tech__name'>Css</h4>
+                                <h2 className='tech__name'>Css</h2>
 
                             </div>
                             <div className='slider__img-container'>
@@ -92,7 +92,7 @@ const Slider = () => {
                             </div>      
                             <div className='slider__img-container'>
                                 <img className='slider__img' src="/logos/node.png"/>
-                                <h4 className='tech__name'>Node</h4>
+                                <h2 className='tech__name'>Node</h2>
 
                             </div>
                             <div className='slider__img-container'>

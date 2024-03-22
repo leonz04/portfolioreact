@@ -1,42 +1,60 @@
 import ProjectCard from '../components/ProjectsPage/ProjectCard'
 import './styles/ProjectsPage.css'
+import { useAppSelector } from '../store/hooks'
+
 
 
 const ProjectsPage = () => {
 
   
-  
+const modeView=useAppSelector((state)=>state.modeView);
+const modeLanguage=useAppSelector((state)=>state.modeLanguage)
 
   
 
 
   return ( 
-    <section className='projectspage'  >
+    <section className={`projectspage ${modeView?'ligth':'dark'}`}  >
 
-        <h2 className='skillspage__title'>Projects</h2>
+        <h2 className='skillspage__title'>
+          {modeLanguage  ? 'Proyectos':'Projects'}
+
+          
+        </h2>
         <div className='content__projects'>
 
         <ProjectCard
-        icon='/logo-projects/reserve.svg'
+        icon={`${modeView ? '/logo-projects/reserve_ligth.svg':'/logo-projects/reserve_dark.svg' }`}
         issue=''
-          projectName="Reservations App"
-          projectDescription="Pensando en vacaciones?....Esta aplicacion te ayuda a investigar información sobre los diferentes hoteles en el mundo busca por por país, ciudad o precio y haz tu reservacion. Recuerda que debes haber iniciado sesion para poder hacer tu reservación y gestionarlas. "
+        githublink="https://github.com/leonz04/reservationsApp"
+          projectName={modeLanguage  ? 'Reservaciones App':'Reservations App'}          
+          projectDescription={modeLanguage  ? "Pensando en vacaciones?....Esta aplicacion te ayuda a investigar información sobre los diferentes hoteles en el mundo busca por por país, ciudad o precio y haz tu reservacion. Recuerda que debes haber iniciado sesion para poder hacer tu reservación y gestionarlas."
+          :
+          "Thinking about vacations?...This application helps you research information about different hotels in the world, search by country, city or price and make your reservation. Remember that you must be logged in to be able to make your reservation and manage them. "
+          }          
           projectLink="https://reservationsapp.onrender.com"
           projectDuration="1 Week"
           technologies={['/logos/react.svg', '/logos/js.png', '/logos/Figma-logo.svg', '/logos/html.svg', '/logos/css.svg']}
         />
         <ProjectCard
-        icon='/logo-projects/pokemon.svg'
+        icon={`${modeView ? '/logo-projects/pokemon_ligth.svg':'/logo-projects/pokemon_dark.svg' }`}
         issue=''
+        githublink="https://github.com/leonz04/reservationsApp"
+
           projectName="Pokedex Simulator"
-          projectDescription="Si aun no tienes claro cuantos pokemon existen, te invitamos a que lo averigues en este simulador Pokedex en el cual podras ver todos los pokemons existentes, tambien podras filtrar por nombre y tipo de pokemon como funcion adicional podras escoger entre dos modos de vista. "
+          projectDescription={modeLanguage  ? "Si aun no tienes claro cuantos pokemon existen, te invitamos a que lo averigues en este simulador Pokedex en el cual podras ver todos los pokemons existentes, tambien podras filtrar por nombre y tipo de pokemon como funcion adicional podras escoger entre dos modos de vista."
+          :
+          "If you are still not sure how many pokemon exist, we invite you to find out in this Pokedex simulator in which you can see all the existing pokemon, you can also filter by name and type of pokemon as an additional function you can choose between two view modes"
+          }        
           projectLink="https://pokedexapi2-oihn.onrender.com"
           projectDuration="2 Weeks"
           technologies={['/logos/react.svg', '/logos/js.png', '/logos/Figma-logo.svg', '/logos/html.svg', '/logos/css.svg']}
         />
         <ProjectCard
-         icon='/logo-projects/rickmorty.svg'
+         icon={`${modeView ? '/logo-projects/rickmorty_ligth.svg':'/logo-projects/rickmorty_dark.svg' }`}
          issue=''
+         githublink="https://github.com/leonz04/reservationsApp"
+
           projectName="Rick y Morty Dimensions"
           projectDescription="Consulta los personajes de Rick y morty por cada dimension que existe, esta web te permite hacerlo tambien podrias ver los episodios de la serie y los personajes que aprecen en cada episodio. Para realizar este proyecto se utilizo la API ppublica de Rick and Morty."
           projectLink="https://prorickandmortyapp.netlify.app"
@@ -44,8 +62,10 @@ const ProjectsPage = () => {
           technologies={['/logos/react.svg', '/logos/js.png', '/logos/Figma-logo.svg', '/logos/html.svg', '/logos/css.svg']}
         />
         <ProjectCard
-         icon='/logo-projects/usr-crud.svg'
+         icon={`${modeView ? '/logo-projects/usr_crud_ligth.svg':'/logo-projects/usr_crud_dark.svg' }`}
          issue=''
+         githublink="https://github.com/leonz04/reservationsApp"
+
           projectName="User Crud"
           projectDescription="Si deseas guardar inormación sobre tus conocidos o contactos esta aplicacion esta aplicacion es para ti "
           projectLink="https://crudusercrud.netlify.app/"
@@ -53,8 +73,10 @@ const ProjectsPage = () => {
           technologies={['/logos/react.svg', '/logos/js.png', '/logos/Figma-logo.svg', '/logos/html.svg', '/logos/css.svg']}
         />
         <ProjectCard
-         icon='/logo-projects/weather.svg'
+         icon={`${modeView ? '/logo-projects/weather_ligth.svg':'/logo-projects/weather_dark.svg' }`}
          issue=''
+         githublink="https://github.com/leonz04/reservationsApp"
+
           projectName="Weather App"
           projectDescription="Deseas saber el clima de tu ciudad?..... Aqui podras el estado actual del clima en tu ubicación, tambien puedes consultar el de la ciudad o pais que desees."
           projectLink="https://weatherapp-trw1.onrender.com"

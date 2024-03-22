@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-	<title>HTML5 Logo</title>
-	<path d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"/>
-	<path fill="#e44d26" d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"/>
-	<path fill="#f16529" d="M256 480.5V131H404.3L376 447"/>
-	<path fill="#ebebeb" d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"/>
-	<path fill="#fff" d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451.52 512"><defs><style>.cls-1{fill:#e44d26;}.cls-2{fill:#f16529;}.cls-3{fill:#ebebeb;}.cls-4{fill:#fff;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M41.07,461,0,0H451.52L410.45,460.73,225.38,512"/><path class="cls-2" d="M225.76,472.8v-435H410.32L375.1,431.11"/><path class="cls-3" d="M83.88,94.21H225.76v56.5h-79.9l5.23,57.87h74.67V265H99.31m2.49,28.38h56.75l4,45.17,63.22,16.93v59l-116-32.36"/><path class="cls-4" d="M367.14,94.21H225.51v56.5h136.4m-5.1,57.87H225.51v56.51H295.2l-6.59,73.42-63.1,16.93v58.74l115.74-32.11"/></g></g></svg>

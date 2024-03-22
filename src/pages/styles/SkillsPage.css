@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:whitesmoke;
+    background:var(--bg);
     height: 100vh;
     width: 100%;
 }
@@ -74,6 +74,7 @@
     font-weight: 700;
     margin-bottom: 0.5em;
     padding-top: 10vh;
+    color: var(--text);
     
     
 }
@@ -81,7 +82,7 @@
 .skillcard__title{
     font-size: 1.2rem;
     letter-spacing: 0.2em;
-    color: #424141;
+    color: var(--text);
 
 }
 
@@ -96,14 +97,14 @@
     border: 0.5px solidlinear-gradient(90deg, rgba(255, 255, 255, 0.776) 50%, rgba(0,0,0,0) 90%);
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.325);
     /* background-image: url("/logos/ts.png"),linear-gradient(); */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.776) , rgba(0,0,0,0) 120%), no-repeat 110% 45%/50%  var(--url-bg);
+    background: linear-gradient(90deg, rgba(255, 255, 255, var(--opacityLogo) ) , rgba(0,0,0,0) 120%), no-repeat 110% 45%/50%  var(--url-bg);
     background-size:25%;
     background-repeat: no-repeat;
     background-position:top right;
     transform: rotateZ('angle');
     padding: 1em;
     cursor: pointer;
-    background-color: white;
+    background-color: var(--bg);
     
 
 }

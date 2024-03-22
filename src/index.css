@@ -11,12 +11,16 @@
 .dark{
     --bg: darkblue;
     --text: white;
+    --opacityLogo:0;
+    --link:yellow;
 
 }
 
 .ligth{
     --bg: whitesmoke;
     --text: darkblue;
+    --opacityLogo:0.576;
+    --link:blue;
 
 }
 
