@@ -23,9 +23,10 @@
   .input {
     width: 25px;
     height: 25px;
-    background-color: #2C3E50;
+    background-color: lightblue;
     position: relative;
     border-radius: 50%;
+    color: var(--text);
   }
   .input:last-child::after{
     width: 0;
@@ -41,7 +42,7 @@
     z-index: -1;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #2C3E50;
+    background-color: lightblue;
     width:1vw;
     height: 5px;
     max-width: 100px;
@@ -54,7 +55,7 @@
     z-index: -1;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #2C3E50;
+    background-color: lightblue;
     width:8vw;
     height: 5px;
     max-width: 120px;
@@ -62,7 +63,7 @@
 
 
   .input.active {
-    background-color: #2C3E50;
+    background-color: var(--link);
   }
   .input.active::before {
     background-color: #2C3E50;

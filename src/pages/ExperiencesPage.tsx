@@ -1,16 +1,22 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import './styles/ExperienciesPage.css'
+import { useAppSelector } from '../store/hooks'
+
 
 const ExperiencesPage = () => {
+
+  const modeView=useAppSelector((state)=>state.modeView);
+  const modeLanguage=useAppSelector((state)=>state.modeLanguage);
+
   return (
-    <section className='experiencespage'>
-      <h2 className='experiencespage__title'>Experiences</h2>
+    <section className={`experiencespage ${modeView?'ligth':'dark'}`}>
+      <h2 className='experiencespage__title '>{modeLanguage?'Experiencia':'Experience'}</h2>
 
       <VerticalTimeline lineColor={ 'lightgray' }>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'white', color: '#000',    boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)'  }}
+          contentStyle={{ background: 'var(--text)', color: 'var(--bg)',    boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)'  }}
           contentArrowStyle={{ borderRight: '15px solid  rgb(33, 150, 243)' }}
           date="2022 - Presente"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -28,7 +34,7 @@ const ExperiencesPage = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'white', color: '#000',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)'  }}
+          contentStyle={{ background: 'var(--text)', color: 'var(--bg)',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)'  }}
           contentArrowStyle={{ borderRight: '15px solid  rgb(33, 150, 243)' }}
 
           date="2020 - 2022"
@@ -50,7 +56,7 @@ const ExperiencesPage = () => {
         
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'white', color: '#000',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)'  }}
+          contentStyle={{ background: 'var(--text)', color: 'var(--bg)',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)'  }}
           contentArrowStyle={{ borderRight: '15px solid  rgb(33, 150, 243)' }}
           date="2019 - 2020"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -63,7 +69,7 @@ const ExperiencesPage = () => {
             Diseño grafico y estampado.
           </p>
           <div className='logo__company__container'>
-          <img  className='logo__company' src="https://scontent.fclo1-4.fna.fbcdn.net/v/t39.30808-6/326249267_871908627408683_6017666635889321609_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHf07iTPCFO84P3gyNCeRkEX8NORf-_G3dfw05F_78bd0KSLUGArZTs2vlQCfMy6vFcy4Xj0IqFltXgUHEF6qY6&_nc_ohc=I5NVfK3BvhsAX9M8S_D&_nc_ht=scontent.fclo1-4.fna&oh=00_AfAGj1u0wkiuwH3lrmcW_00_yKB-xg1pog3GO29ze7s6-w&oe=65E9E57C" alt="logo_soldarco" />
+          <img  className='logo__company' src="/company/beardcaps.svg" alt="logo_soldarco" />
           </div>
           </div>
 
@@ -71,15 +77,15 @@ const ExperiencesPage = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'white', color: '#000',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)'  }}
+          contentStyle={{ background: 'var(--text)', color: 'var(--bg)',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)'  }}
           contentArrowStyle={{ borderRight: '15px solid   rgb(33, 150, 243)' }}
           date="2016 - 2018"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         >
         <div className='job__company'>
 
-          <h3 className="vertical-timeline-element-title">Desempleado</h3>
-          <h4 className="vertical-timeline-element-subtitle">Independiente</h4>
+          <h3 className="vertical-timeline-element-title">Independiente</h3>
+          <h4 className="vertical-timeline-element-subtitle"></h4>
           <p>
             Asesor y Desarrollador web independiente
           </p>
@@ -91,7 +97,7 @@ const ExperiencesPage = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'white', color: '#000',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'var(--text)', color: 'var(--bg)',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)' }}
           contentArrowStyle={{ borderRight: '15px solid  rgb(33, 150, 243)' }}
           date="2013-2015"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -104,7 +110,7 @@ const ExperiencesPage = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'white', color: '#000',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'var(--text)', color: 'var(--bg)',     boxShadow: '0px 0px 1px 4px rgb(33, 150, 243)' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="2008-2013"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}

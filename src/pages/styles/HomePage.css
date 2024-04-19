@@ -62,12 +62,12 @@
 @keyframes beat1 {
     0%, 50%, 100% { 
         transform: scale(1.2    , 1.2); 
-        color: blue;
+        color: var(--link);
 
     }
     20%, 85% {
         transform: scale(0.92, 0.95);
-        color: black;
+        color: var(--text);
      }
   }
 

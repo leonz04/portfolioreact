@@ -56,7 +56,10 @@ const modeLanguage=useAppSelector((state)=>state.modeLanguage)
          githublink="https://github.com/leonz04/reservationsApp"
 
           projectName="Rick y Morty Dimensions"
-          projectDescription="Consulta los personajes de Rick y morty por cada dimension que existe, esta web te permite hacerlo tambien podrias ver los episodios de la serie y los personajes que aprecen en cada episodio. Para realizar este proyecto se utilizo la API ppublica de Rick and Morty."
+          projectDescription={modeLanguage  ? "Consulta los personajes de Rick y morty por cada dimension que existe, esta web te permite hacerlo tambien podrias ver los episodios de la serie y los personajes que aprecen en cada episodio. Para realizar este proyecto se utilizo la API ppublica de Rick and Morty."
+          :
+          "Consult the characters of Rick and Morty for each dimension that exists, this website allows you to do so, you could also see the episodes of the series and the characters that appear in each episode. To carry out this project, the Rick and Morty public API was used."
+          }
           projectLink="https://prorickandmortyapp.netlify.app"
           projectDuration="2 Week"
           technologies={['/logos/react.svg', '/logos/js.png', '/logos/Figma-logo.svg', '/logos/html.svg', '/logos/css.svg']}
@@ -67,7 +70,10 @@ const modeLanguage=useAppSelector((state)=>state.modeLanguage)
          githublink="https://github.com/leonz04/reservationsApp"
 
           projectName="User Crud"
-          projectDescription="Si deseas guardar inormación sobre tus conocidos o contactos esta aplicacion esta aplicacion es para ti "
+          projectDescription={modeLanguage  ? "Si deseas guardar inormación sobre tus conocidos o contactos esta aplicacion esta aplicacion es para ti. "
+          :
+          "If you want to save information about your acquaintances or contacts, this application is for you."
+          }
           projectLink="https://crudusercrud.netlify.app/"
           projectDuration="2 Week"
           technologies={['/logos/react.svg', '/logos/js.png', '/logos/Figma-logo.svg', '/logos/html.svg', '/logos/css.svg']}
@@ -78,7 +84,10 @@ const modeLanguage=useAppSelector((state)=>state.modeLanguage)
          githublink="https://github.com/leonz04/reservationsApp"
 
           projectName="Weather App"
-          projectDescription="Deseas saber el clima de tu ciudad?..... Aqui podras el estado actual del clima en tu ubicación, tambien puedes consultar el de la ciudad o pais que desees."
+          projectDescription={modeLanguage  ? "Deseas saber el clima de tu ciudad?..... Aqui podras el estado actual del clima en tu ubicación, tambien puedes consultar el de la ciudad o pais que desees."
+          :
+          "Do you want to know the weather in your city?..... Here you can see the current state of the weather in your location, you can also check the weather in the city or country you want."
+          }
           projectLink="https://weatherapp-trw1.onrender.com"
           projectDuration="2 Week"
           technologies={['/logos/react.svg', '/logos/js.png', '/logos/html.svg', '/logos/css.svg']}

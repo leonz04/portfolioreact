@@ -1,5 +1,5 @@
 .experiencespage{
-    background:whitesmoke;
+    background:var(--bg);
 
 }
 
@@ -9,6 +9,8 @@
     font-weight: 700;
     margin-bottom: 0.8em;
     text-align: center;
+    color: var(--text);
+    
 }
 
 .vertical-timeline-element-icon{
@@ -34,12 +36,15 @@
 }
 
 .logo__company{
-    height: 85px;   
+    height: 85px;
+    object-fit: cover; 
     
 }
 
 .logo__companyR{
 width: 250px;    
+object-fit: contain; 
+
 }
 
 .job__company{
@@ -47,6 +52,9 @@ width: 250px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
 
-
+.vertical-timeline-element-date{
+    color: var(--text) !important;
+    font-weight: 700 !important;
 }

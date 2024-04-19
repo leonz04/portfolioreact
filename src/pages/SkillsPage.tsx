@@ -10,7 +10,7 @@ const modeLanguage=useAppSelector((state)=>state.modeLanguage)
   return (
     <section className={`skillspage ${modeView?'ligth':'dark'}`}>
       <h2 className='skillspage__title'>
-      {modeLanguage  ? 'Tecnologías':'Technologies'}
+      {modeLanguage  ? 'Habilidades':'Skills'}
       </h2>
 
       <div className='content__technologies'>

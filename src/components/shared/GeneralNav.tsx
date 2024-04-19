@@ -11,8 +11,7 @@ const GeneralNav = () => {
 const modeView=useAppSelector((state)=>state.modeView);
 const modeLanguage=useAppSelector((state)=>state.modeLanguage);
 
-console.log(`hola esto es nu prueba modo ${modeView}`)
-console.log(`hola esto es nu prueba language ${modeLanguage}`)
+
 const dispatch =useAppDispatch();
 
   const [openMenu, setOpenMenu] = useState(false)
@@ -32,17 +31,17 @@ const dispatch =useAppDispatch();
 
 
   return (
-    <nav className="nav">
+    <nav className={`nav ${modeView?'light':'dark'} `}>
         <Link className="nav__logo" to={'/'}><img className="img__logo" src="/leonz.png" alt='logo_leonz'/></Link>
 
     
 
         <ul className={`nav__menu ${openMenu? 'open__menu':''}`}>            
-            <li className="nav__menu-item"><Link to={'/skills'}><img className="icon__nav" src="/icons-nav/skills.svg"/>Skills</Link></li>
-            <li className="nav__menu-item"><Link to={'/projects'}><img className="icon__nav" src="/icons-nav/projects.png"/>Projects</Link></li>
-            <li className="nav__menu-item"><Link to={'/experiences'}><img className="icon__nav" src="/icons-nav/experience.svg"/>Experiences</Link></li>
-            <li className="nav__menu-item"><Link to={'/education'}><img className="icon__nav" src="/icons-nav/education.png"/>Education</Link></li>
-            <li className="nav__menu-item"><Link to={'/resume'}><img className="icon__nav" src="/icons-nav/resume.png"/>Resume</Link></li>
+            <li className="nav__menu-item"><Link to={'/skills'}><img className="icon__nav" src={modeView?'icons-nav/skillsLight.svg':'icons-nav/skillsDark.svg'}/>{modeLanguage?'Habilidades':'Skills'}</Link></li>
+            <li className="nav__menu-item"><Link to={'/projects'}><img className="icon__nav" src={modeView?'icons-nav/projectsLight.svg':'icons-nav/projectsDark.svg'}/>{modeLanguage?'Proyectos':'Projects'}</Link></li>
+            <li className="nav__menu-item"><Link to={'/experiences'}><img className="icon__nav" src={modeView?'icons-nav/experienceLight.svg':'icons-nav/experienceDark.svg'} />{modeLanguage?'Experiencia':'Experience'}</Link></li>
+            <li className="nav__menu-item"><Link to={'/education'}><img className="icon__nav" src={modeView?'icons-nav/educationLigth.svg':'icons-nav/educationDark.svg'}/>{modeLanguage?'Educación':'Education'}</Link></li>
+            <li className="nav__menu-item"><Link to={'/resume'}><img className="icon__nav" src={modeView?'icons-nav/resumeLight.svg':'icons-nav/resumeDark.svg'}/>Resume</Link></li>
         </ul>
 
         <section className="mode__lang">
@@ -54,7 +53,7 @@ const dispatch =useAppDispatch();
             <option>English</option>
         </select>
         </div>
-        <i className={`nav__mode-icon bx ${modeView?'bxs-sun':'bxs-moon'}`}  onClick={handleMode}></i>
+        <i className={`nav__mode-icon bx  ${modeView?'bxs-sun':'bxs-moon'}`}  onClick={handleMode}></i>
         {/* <i className='bx bxs-moon'></i> */}
 
         </section>

@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import './styles/HorizontalTimeLine.css';
 import EducationCard from './EducationCard';
+import { useAppSelector } from '../../store/hooks'
+
 
 const HorizontalTimeLine = () => {
+
+  const modeView=useAppSelector((state)=>state.modeView);
+
   const [activeIndex, setActiveIndex] = useState(0); // Inicializar con el índice activo por defecto
 
   const handleInputClick = (index: number) => {
@@ -24,7 +29,7 @@ const HorizontalTimeLine = () => {
 
   return (
 
-    <div className="flex-parent">
+    <div className={`flex-parent ${modeView?'ligth':'dark'}`}>
       <div className="input-flex-container">
         {yearsData.map((data, index) => (
           <div key={data.year} className={`input ${index === activeIndex ? 'active' : ''}`} onClick={() => handleInputClick(index)}>
