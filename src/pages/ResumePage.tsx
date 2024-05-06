@@ -30,7 +30,7 @@ const ResumePage = () => {
       </article>
       
       </section>
-      <TechBar></TechBar>
+      {/* <TechBar></TechBar> */}
       <img className='img__downloadcv' src={`${modeView?'./downloadCV_ligth.svg':'./downloadCV_dark.svg'}`} alt=''/>
 
       <article className='softskills__general'>

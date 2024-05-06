@@ -41,7 +41,7 @@ const dispatch =useAppDispatch();
             <li className="nav__menu-item"><Link to={'/projects'}><img className="icon__nav" src={modeView?'icons-nav/projectsLight.svg':'icons-nav/projectsDark.svg'}/>{modeLanguage?'Proyectos':'Projects'}</Link></li>
             <li className="nav__menu-item"><Link to={'/experiences'}><img className="icon__nav" src={modeView?'icons-nav/experienceLight.svg':'icons-nav/experienceDark.svg'} />{modeLanguage?'Experiencia':'Experience'}</Link></li>
             <li className="nav__menu-item"><Link to={'/education'}><img className="icon__nav" src={modeView?'icons-nav/educationLigth.svg':'icons-nav/educationDark.svg'}/>{modeLanguage?'Educación':'Education'}</Link></li>
-            <li className="nav__menu-item"><Link to={'/resume'}><img className="icon__nav" src={modeView?'icons-nav/resumeLight.svg':'icons-nav/resumeDark.svg'}/>Resume</Link></li>
+            <li className="nav__menu-item"><Link to={'/resume'}><img className="icon__nav" src={modeView?'icons-nav/resumeLight.svg':'icons-nav/resumeDark.svg'}/>{modeLanguage?'Resume':'Resume'}</Link></li>
         </ul>
 
         <section className="mode__lang">
