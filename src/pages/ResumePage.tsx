@@ -1,4 +1,4 @@
-import TechBar from '../components/ResumePage/TechBar'
+// import TechBar from '../components/ResumePage/TechBar'
 import './styles/ResumePage.css'
 import { useAppSelector } from '../store/hooks'
 
