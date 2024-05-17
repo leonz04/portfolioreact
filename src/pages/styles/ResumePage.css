@@ -124,3 +124,29 @@
     0%, 50%, 100% { transform: scale(1, 1); }
     20%, 85% { transform: scale(0.92, 0.95); }
   }
+
+  @media (min-width:300px) and (max-width:480px){
+
+    .resumepage{
+        height: 100%;
+    }
+
+    .generalinfo__content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info__general__info{
+        width: 100%;
+    }
+    .generalinfo__aboutme{
+        padding-top: 1em;
+        width: 100%;
+
+    }
+
+    .softskills__content{
+        justify-content: center;
+    }
+  }

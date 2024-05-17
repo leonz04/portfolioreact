@@ -197,3 +197,21 @@
       text-align: center;
     }
   } 
+
+  @media (min-width:300px) and (max-width:480px){
+    .input.active span::before{
+      font-size: 12px;
+    }
+    .input span::before{
+      font-size: 10px;
+      width: 90px;
+    }
+    .description-flex-container{
+      width: 90%;
+    }
+    .input span::after{
+      color: var(--bg);
+    }
+  }
+
+

@@ -30,31 +30,42 @@
 }
 
 .logo__company__container{
-    position: absolute;
-    align-self: flex-end;
-    bottom: 0;   
+    display: flex;
+    width:  100%;
+        bottom: 0;   
 }
 
 .logo__company{
-    height: 85px;
-    object-fit: cover; 
+    width:  80%;
+    
+    align-self: self-start;
+    margin:auto auto;
     
 }
 
-.logo__companyR{
-width: 250px;    
-object-fit: contain; 
-
-}
 
 .job__company{
-    position:relative;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+.job__company__info{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .vertical-timeline-element-date{
     color: var(--text) !important;
     font-weight: 700 !important;
+}
+
+@media (min-width:300px) and (max-width:480px){
+  
+
+    .vertical-timeline-element-date{
+        color: var(--bg) !important;
+        font-weight: 700 !important;
+    }
+
+
 }

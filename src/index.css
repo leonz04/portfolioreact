@@ -13,6 +13,7 @@
     --text: white;
     --opacityLogo:0;
     --link:yellow;
+    --bgn:darkblue;
 
 }
 
@@ -21,6 +22,7 @@
     --text: darkblue;
     --opacityLogo:0.576;
     --link:blue;
+    --bgn:white;
 
 }
 
